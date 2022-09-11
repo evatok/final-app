@@ -44,9 +44,9 @@ body {
   }
   ul {
     list-style: none;
-    margin-left: 0;
-    padding: 0;
-    line-height: 170%;
+  margin: 0 0 10px;
+  padding: 0;
+  line-height: 170%;
   }
 #link-to-github {
   margin-top: 20px;
