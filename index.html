@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>meteo</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="row">
+          <div class="col-4">
+            <h3>Weather App</h3>
+          </div>
+          <div class="col-8">
+            <div class="input-group">
+              <input
+                id="type-city"
+                type="search"
+                class="form-control rounded"
+                placeholder="Type a city..."
+                aria-label="Search"
+                aria-describedby="search-addon"
+              />
+              <button type="button" class="btn btn-primary" id="search-button">
+                search
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                id="find-my-location"
+              >
+                my location
+              </button>
+            </div>
+
+            <div id="passwordHelpBlock" class="form-text"></div>
+          </div>
+        </div>
+      </div>
+
+      <h1 id="requested-location"></h1>
+      <h5 id="current-date"></h5>
+      <div class="row">
+        <div class="col-4">
+          <h1 class="now">
+            <span id="temperature"></span> <a href="#" id="unit-c">°C</a>
+            <a href="#" id="unit-f">°F</a>
+          </h1>
+        </div>
+        <div class="col-8">
+          <ul>
+            <li id="description"></li>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span> km/h</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2">
+          <div class="card" class="future">
+            <div class="card-body">
+              <h5 class="card-title">THU</h5>
+              <p class="card-text">23°C / 43°C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">THU</h5>
+              <p class="card-text">23°C / 43°C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">THU</h5>
+              <p class="card-text">23°C / 43°C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">THU</h5>
+              <p class="card-text">23°C / 43°C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">THU</h5>
+              <p class="card-text">23°C / 43°C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">THU</h5>
+              <p class="card-text">23°C / 43°C</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
